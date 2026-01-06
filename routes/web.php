@@ -24,6 +24,6 @@ Route::get('/home', function() {
     ]);
 });
 
-Route::post('/register', function(Request) {
-    return "Mo ti register";
+Route::post('/register', function(Request $req) {
+    return $req->full_name;
 });
