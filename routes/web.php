@@ -7,5 +7,6 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function() {
-    return view('home');
+    $user = "Oluwafemi";
+    return view('home', $user);
 });
