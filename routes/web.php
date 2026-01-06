@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -21,4 +22,8 @@ Route::get('/home', function() {
         'students' => $students,
         'user' => $user
     ]);
+});
+
+Route::post('/register', function(Request) {
+    return "Mo ti register";
 });
